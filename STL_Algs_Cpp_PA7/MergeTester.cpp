@@ -61,21 +61,25 @@ int main() {
 
 void mergeLists(list<string> one, list<string> two) {
 	one.sort();
-	cout << " The merging of sorted vector 1, ";
+	cout << " The merging of sorted list 1, ";
 	for (auto v : one) {
 		cout << v << " ";
 	}
 	cout << endl;
 	
 	two.sort();
-	cout << " with sorted vector 2, ";
+	cout << " with sorted list 2, ";
 	for (auto w : two) {
 		cout << w << " ";
 	}
 	cout << endl;
 
-	cout << " Will create the following vector ";
-
+	list<string> mergedList;
+	one.merge(two);
+	cout << " Will create the following list ";
+	for (auto x : one) {
+		cout << x << " ";
+	}
 	cout << endl << endl;
 	cout << one.size();
 	
