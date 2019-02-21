@@ -52,13 +52,25 @@ int main() {
 
 
 void mergeLists(list<string> one, list<string> two) {
-	cout << "The merging of vector 1 and vector 2  will create the following vector" << endl;
+	cout << "The merging of vector 1 ";
+	
+	cout << endl;
+	
+	cout << " with vector 2 ";
+
+	cout << endl;
+
+	cout << "Will create vector ";
+
+	cout << endl << endl;
+	
+	/*cout << "The merging of vector 1 and vector 2  will create the following vector" << endl;
 	vector<string> v(one.size() + two.size());
 	sort(one, one + one.size());
 
 	for (vector<int>::iterator it = v.begin(); it != v.end(); ++it)
     cout << ' ' << *it;
-	cout << '\n';
+	cout << '\n';*/
 
 
 	//list <string> ::iterator it;
@@ -73,8 +85,8 @@ void mergeLists(list<string> one, list<string> two) {
 	//}
 
 
-	cout << endl;
-	vector<string> v(one.size() + two.size());
+	/*cout << endl;
+	vector<string> v(one.size() + two.size());*/
 	/*sort(one.begin(), one.end());*/
 	/*sort(two.begin(), two.end());
 	merge(one.front, one.back, two.front, two.back, v.begin());*/
