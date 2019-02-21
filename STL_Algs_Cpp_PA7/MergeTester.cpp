@@ -4,6 +4,14 @@
 #include <vector>
 #include <algorithm>
 #include <list>
+
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <cmath>
+#include <vector>
+#include <sstream>
+#include <cstdio>
 using namespace std;
 
 void mergeLists(list<string> , list<string> );
@@ -52,47 +60,24 @@ int main() {
 
 
 void mergeLists(list<string> one, list<string> two) {
-	cout << "The merging of vector 1 ";
-	
+	one.sort();
+	cout << " The merging of sorted vector 1, ";
+	for (auto v : one) {
+		cout << v << " ";
+	}
 	cout << endl;
 	
-	cout << " with vector 2 ";
-
+	two.sort();
+	cout << " with sorted vector 2, ";
+	for (auto w : two) {
+		cout << w << " ";
+	}
 	cout << endl;
 
-	cout << "Will create vector ";
+	cout << " Will create the following vector ";
 
 	cout << endl << endl;
+	cout << one.size();
 	
-	/*cout << "The merging of vector 1 and vector 2  will create the following vector" << endl;
-	vector<string> v(one.size() + two.size());
-	sort(one, one + one.size());
-
-	for (vector<int>::iterator it = v.begin(); it != v.end(); ++it)
-    cout << ' ' << *it;
-	cout << '\n';*/
-
-
-	//list <string> ::iterator it;
-	//for (it = one.begin(); it != one.end(); ++it)
-	//	cout << it;
-	//cout << '\n';
-
-	//list<string>::iterator it = one.begin();
-	//for (int i = 0; i < one.size(); i++) {
-	//	cout << it << " ";
-	//	++it;
-	//}
-
-
-	/*cout << endl;
-	vector<string> v(one.size() + two.size());*/
-	/*sort(one.begin(), one.end());*/
-	/*sort(two.begin(), two.end());
-	merge(one.front, one.back, two.front, two.back, v.begin());*/
-
-	/*for (int i = 0; i < v.size(); ++i) {
-		cout << v[i];
-	}*/
 }
 
