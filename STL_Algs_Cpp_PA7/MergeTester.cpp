@@ -81,7 +81,6 @@ void mergeLists(list<string> one, list<string> two) {
 		cout << x << " ";
 	}
 	cout << endl << endl;
-	cout << one.size();
 	
 }
 
